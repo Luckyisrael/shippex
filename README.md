@@ -2,7 +2,16 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-This is a test project, built with React Native & Typescript. I had fun while working on this project although I didn't achieve my aim due to uncontrollable circumstances. Keep an eye on this repo, I will be making updates from time to time.
+This is a test project, built with React Native & Typescript. I had fun while working on this project and enjoyed every second of it. Keep an eye on this repo, I will be making updates from time to time.
+Note: After pinging the enpoints with postman i couldnt get access to the api so  i used dummy data for the content of the applcation and local method of authentication.
+
+---
+
+## Login Details
+
+- URl - Optional
+- Email - 'test@brandimic.com' (mandatory)
+- Password = 'testy123@' (mandatory)
 
 ---
 

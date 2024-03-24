@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "b4e45e80-4bca-475c-b748-ecd4d76eb4ee",
+		"name": "Shippex Test Task APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14288646",
+		"_collection_link": "https://bold-eclipse-779338.postman.co/workspace/MyMall~56bf49a3-ff2b-4c92-842a-985f2559302b/collection/14288646-b4e45e80-4bca-475c-b748-ecd4d76eb4ee?action=share&source=collection_link&creator=14288646"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usr",
+							"value": "test@brandimic.com",
+							"type": "text"
+						},
+						{
+							"key": "pwd",
+							"value": "testy123@",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shippex-demo.bc.brandimic.com/api/method/login",
+					"protocol": "https",
+					"host": [
+						"shippex-demo",
+						"bc",
+						"brandimic",
+						"com"
+					],
+					"path": [
+						"api",
+						"method",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipment Status List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctype",
+							"value": "AWB Status",
+							"type": "text"
+						},
+						{
+							"key": "fields",
+							"value": "[\"*\"]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shippex-demo.bc.brandimic.com/api/method/frappe.client.get_list",
+					"protocol": "https",
+					"host": [
+						"shippex-demo",
+						"bc",
+						"brandimic",
+						"com"
+					],
+					"path": [
+						"api",
+						"method",
+						"frappe.client.get_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipment List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"doctype\":\"AWB\",\n    \"fields\": [\"*\"],\n    \"filters\": {\n        \"name\": [\"like\", \"%add_search_term_here%\"]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shippex-demo.bc.brandimic.com/api/method/frappe.client.get_list",
+					"protocol": "https",
+					"host": [
+						"shippex-demo",
+						"bc",
+						"brandimic",
+						"com"
+					],
+					"path": [
+						"api",
+						"method",
+						"frappe.client.get_list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

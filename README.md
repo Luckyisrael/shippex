@@ -34,6 +34,16 @@ These instructions will help you set up the project on your local machine and te
 
 ---
 
+## Functionalities
+
+- Animated Splashscreen
+- Login Authentication
+- Search Shippment by Shipping ID
+- Filter by Shippment Status
+- Pull to Refresh
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

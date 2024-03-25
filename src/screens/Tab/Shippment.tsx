@@ -182,11 +182,12 @@ const Shippment = () => {
           )}
         </View>
       </View>
+
       <View>
         <BottomSheet visible={visible} onBackButtonPress={toggle} onBackdropPress={toggle}>
           <View style={styles.bottomSheetContainer}>
             <View style={styles.bottomSheetHeader}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={toggle}>
                 <Text family="bold" size={16} color={colors.palette.primary300}>
                   Cancel
                 </Text>
@@ -196,7 +197,7 @@ const Shippment = () => {
                   Filter
                 </Text>
               </View>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={toggle}>
                 <Text family="bold" size={16} color={colors.palette.primary300}>
                   Done
                 </Text>
